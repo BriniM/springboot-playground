@@ -22,7 +22,7 @@ public class ExampleEntityAService {
   private ExampleEntityBRepository exampleEntityBRepository;
 
   public List<CustomEntityA> findAll() {
-    return exampleEntityARepository.findAllProjectedBy();
+    return exampleEntityARepository.findBy(CustomEntityA.class);
   }
 
   public void saveDummyData() {
